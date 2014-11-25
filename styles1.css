@@ -1,0 +1,480 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid {
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='column-'] {
+  float: left;
+}
+
+.grid .grid [class*='column-'] {
+  padding: 0 25px;
+}
+
+.grid .grid {
+  margin: 0 -25px 25px;
+}
+
+[class*='column-']:last-of-type {
+  padding-right: 0;
+}
+
+.column-1-12 {
+  width: 8.33%
+}
+
+.column-2-12 {
+  width: 16.66%
+}
+
+.column-3-12 {
+  width: 25%
+}
+
+.column-4-12 {
+  width: 33.33%
+}
+
+.column-5-12 {
+  width: 41.66%
+}
+
+.column-6-12 {
+  width: 50%
+}
+
+.column-7-12 {
+  width: 58.33%
+}
+
+.column-8-12 {
+  width: 66.66%
+}
+
+.column-9-12 {
+  width: 75%
+}
+
+.column-10-12 {
+  width: 83.33%
+}
+
+.column-11-12 {
+  width: 91.66%
+}
+
+.column-12-12 {
+  width: 100%
+}
+
+.offset-2-12 {
+  margin-left: 16.66%;
+}
+.offset-3-12 {
+  margin-left: 25%;
+}
+
+/* helper classes */
+.clearfix {
+  clear:both;
+}
+.left {
+  float:left
+}
+.right {
+  float:right;
+}
+.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* ANCHORS */
+a {
+  display:inline-block;
+  width:100%;
+  text-align: center;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.subscribe {
+	padding-top:8px;
+	padding-bottom:8px;
+	position:relative;
+	top:0;
+	background-color: #C6C6C6;
+}
+	
+.order {
+	margin-bottom:15px;
+	margin-left: 15px;
+	margin-top:60px;
+	padding-top:8px;
+	padding-bottom:8px;
+	background-color: #C6C6C6;
+}
+
+.rating {
+	margin-left: 15px;
+	background-color: #C6C6C6;
+}
+
+input {
+	padding-right:60px;
+}
+
+
+
+/* IMAGE CLASS"S */
+
+.full-width1 {
+	width:100%;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-top: 60px;
+}
+
+.full-width2 {
+	width:100%;
+	padding-left:15px;
+	padding-bottom:15px;
+	padding-top: 60px;
+}
+
+.full-width3 {
+	width:100%;
+	padding-right:15px;
+	padding-bottom:9px;
+	margin-top:30px;
+}
+
+.full-width4 {
+	width:100%;
+	padding-right:15px;
+	padding-left: 15px;
+	padding-bottom:10px;
+	margin-top:30px;
+}
+
+.full-width5 {
+	width:100%;
+	padding-left:15px;
+	padding-bottom:9px;
+	margin-top:30px;
+}
+
+.full-width6 {
+	width:100%;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom:0;
+}
+
+.full-width7 {
+	width:100%;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom:0;
+}
+
+.map-width {
+	width:100%;
+	padding-left: 10px;
+	padding-bottom:0;
+	margin-top:75px
+}
+
+/* Home bckground image */
+.background img{ width:100%;
+	padding:0;
+}
+
+/* NAVIGATION */
+nav li {
+	display:inline; 
+	text-decoration:none;
+	float: left;
+	padding-right:33px;
+	padding-bottom:15px;
+	}
+	
+nav { position:fixed; 
+width:100%; 
+top:0;
+background-color:white; 
+}
+
+#about-us {background-color:tan;
+}
+
+#home {
+	background-color:teal;
+	margin-bottom:-6px;
+}
+
+#products {
+	background-color:teal;
+	margin-bottom:-80px;
+}
+
+#how {
+	background-color:tan;
+	margin-bottom:-90px;
+}
+
+#contactus{
+	background-color:teal;
+}
+.nav {
+	margin:0 auto;
+  	margin-bottom:10px;
+}
+
+/* PARAGRAPH CLASS'S */
+.paragraph1 {
+	padding-right:15px;
+	margin-top:0;
+	padding-bottom:15px;
+
+}
+
+.paragraph2 {
+	padding-left:15px;
+	margin-top:0;
+	padding-bottom:15px;
+}
+
+.p1 {
+	background-color:#C6C6C6;
+	padding-bottom:30px;
+	padding-top:30px
+}
+
+.p2 {
+	background-color:#C6C6C6;
+	padding-bottom:48px;
+	padding-top:30px
+}
+
+.p3 {
+	background-color:#C6C6C6;
+	padding-bottom:15px;
+	margin-right:15px;
+}
+
+.p4 {
+	background-color:#C6C6C6;
+	padding-bottom:15px;
+	margin-left: 15px;
+}
+
+.p5 {
+	background-color:#C6C6C6;
+	padding-bottom:15px;
+	margin-right: 15px;
+}
+
+.p6 {
+	background-color:#C6C6C6;
+	padding-bottom:15px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.p7 {
+	background-color:#C6C6C6;
+	padding-bottom:15px;
+	margin-left: 15px;
+}
+
+.p8 {
+	background-color:#C6C6C6;
+	padding-bottom:15px;
+	margin-right:15px;
+	margin-top:15px;
+	margin-bottom:30px;
+}
+
+.p9 {
+	background-color:#C6C6C6;
+	padding-bottom:15px;
+	margin-left: 15px;
+	margin-top:15px;
+	margin-bottom:30px;
+}
+
+.p10 {
+	background-color:#C6C6C6;
+	padding-bottom:15px;
+	margin-right:15px;
+	margin-top:60px;
+}
+
+.p11 {
+	background-color:#C6C6C6;
+	padding-bottom:15px;
+	margin-left: 15px;
+	margin-top:60px;
+}
+
+.p12 {
+	background-color:#C6C6C6;
+	padding-bottom:50px;
+	margin-right: 15px;
+}
+
+.p13 {
+	background-color:#C6C6C6;
+	padding-bottom:57px;
+	margin-right: 15px;
+}
+
+
+/* DESCRPITION'S * (will need at some point)*/
+
+.d1{}
+
+.d2{}
+
+.d3{}
+
+.d4{}
+
+.d5{}
+
+.d6{
+	margin-top:60px;
+	}
+	
+.d7{
+	margin-top:60px;
+	}
+	
+.d8{
+	margin-top:75px;
+	background-color:#C6C6C6;
+	}
+
+
+/* FORUM */
+.review  {
+	margin-bottom:10px;
+	margin-right: 15px;
+	margin-top:60px;
+}
+
+form {
+	margin-right:15px;
+	background-color:#C6C6C6;
+}
+
+/* WRAPPER'S*/
+
+.wrapper-nav {
+	margin:0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom:5px;
+	}
+	
+.wrapper-home {
+	margin:0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom:5px;
+	}
+
+.wrapper-about {
+	margin:0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom:-29px;
+	}
+	
+.wrapper-product {
+	margin:0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom:5px;
+	}
+	
+.wrapper-brew {
+	margin:0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom:5px;
+	padding-top:115px;
+	}
+	
+.wrapper-contact {
+	margin:0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom:5px;
+	}
+	
+/* FOOTER */
+footer {
+  margin:0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom:5px;
+  background-color:tan;
+}
+
+@media only screen and (max-width: 700px) {
+  [class*='column-'] {
+  width:100%;
+
+  }
+  [class*='offset-'] {
+  margin-left:0;
+  }
+  
+  /* PARA CLASS'S */
+  .p2 {
+	  display:none;
+  }
+  
+  .p8 {
+	  display:none;
+  }
+  
+  .p13 {
+	  display:none;
+  }
+  
+  .d8 {
+	  display:none;
+  }
+  
+  .map-width {margin-left:0;}
+  
+  .wrapper-nav { padding:0;
+  margin:0;}
+  
+  nav {font-size:10px;
+}
+
+}
+
